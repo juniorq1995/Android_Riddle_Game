@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="toggleAnswer"
+    android:clickable="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/riddleItem"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="hello"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/answerItem"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clickItem"
+        android:gravity="center"
+        android:text="Click to see answer"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"/>
+</LinearLayout>

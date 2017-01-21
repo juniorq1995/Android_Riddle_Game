@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="PlayerX's Turn"
+            android:id="@+id/playerX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:visibility="visible"
+            android:paddingBottom="20dp"
+            android:background="@color/category_play"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:text="riddle"
+            android:layout_below="@+id/playerX"
+            android:id="@+id/riddleX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:visibility="visible"
+            android:paddingBottom="20dp"/>
+
+
+        <Button
+            android:text="Hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:onClick="hint"
+            android:textSize="20dp"
+            android:id="@+id/hintX"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Hints left"
+            android:layout_above="@+id/hintX"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/hintsLeft"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Skips left"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/skipX"
+            android:id="@+id/skipsLeft"/>
+
+        <Button
+            android:text="Skip"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="skip"
+            android:textSize="20dp"
+            android:id="@+id/skipX"/>
+
+        <TextView
+            android:text="Click to see the Answer"
+            android:textSize="20dp"
+            android:layout_below="@+id/riddleX"
+            android:gravity="center"
+            android:id="@+id/answerX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showAnswer"/>
+
+        <Button
+            android:text="Correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="correct"
+            android:id="@+id/correct"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/answerX"
+            android:layout_marginTop="60dp"
+            android:padding="40dp"
+            android:background="@android:color/holo_green_dark"
+            android:visibility="invisible"/>
+
+        <Button
+            android:text="Incorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="incorrect"
+            android:id="@+id/incorrect"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/answerX"
+            android:layout_marginTop="60dp"
+            android:padding="40dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_red_dark"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
