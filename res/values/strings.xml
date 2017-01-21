@@ -1,0 +1,16 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">Riddle</string>
+
+    <!-- Category name for phrases [CHAR LIMIT=20] -->
+    <string name="category_play">Play a Riddle Game</string>
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <string name="category_browse">Browse Riddles</string>
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <string name="category_settings">Difficulty Settings</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="category_random">Try a Random Riddle</string>
+</resources>
