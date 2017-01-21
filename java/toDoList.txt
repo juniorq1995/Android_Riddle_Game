@@ -1,0 +1,8 @@
+- In RiddleList have it make a list by reading the riddles.txt file, localization not important for riddles since they lose their meaning in translation
+- Implement Difficulty activity
+- Implement a dynamic difficulty algorithm that is based on the number of users who answer a riddle right and number who answer wrong
+- Implement facebook login and posting
+- Create Facebook page and use to mine for new riddles
+- Add category dividers for browse
+- Add hamburger icon with options for going to other pages including the home page
+- Location based riddle duels?
